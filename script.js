@@ -6,7 +6,7 @@ function getDomainLevel(element){
 	int level =0;
 	while(element){
 		level++;
-		break;
+		element = element.parentElement;
 	}
 	return level;
 }
