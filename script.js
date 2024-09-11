@@ -3,10 +3,10 @@ const targetLevel = document.getElementById("level")
 
 
 function getDomainLevel(element){
-	int level =0;
+	let level =0;
 	while(element){
 		level++;
-		element = element.parentElement;
+        element = element.parentElement; // Move up the DOM tree
 	}
 	return level;
 }
